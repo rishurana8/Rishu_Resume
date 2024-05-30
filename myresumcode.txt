@@ -1,0 +1,152 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Rishu Rana} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{{{{\faEnvelope} \href{rishurana256@gmail.com}{rishurana256@gmail.com}}} $|$}
+\textcolor[HTML]{371e77}{{{\faMobile} 78149-78031}}
+
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub} \href{https://github.com/rishurana8}{github.com/rishurana8}}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin} \href{https://www.linkedin.com/in/rishu-rana/}{linkedin.com/in/rishurana}}}}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} C, C++, Javascript, SQL, HTML, 
+ CSS, Data Structure and algorithms\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} Git, Cloud Computing, ExpressJs, MySQL, OOPS, OS, React, Docker, MongoDB, Splunk, ReactJS\\[3pt]
+
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Incedo, Gurgaon}} \hfill \color[HTML]{371e77} Jul 2023 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Software Engineer}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Engineered CI/CD pipelines using YAML, Configured jobs and tasks to Automate the build process, increasing efficiency by 90\%
+        \item Spearheaded change processes, reducing sprint time by 2-3 days, boosting efficiency by 90\%, and increasing project completion by 20\%.
+        \item Oversaw daily production and non-production deployments, Addressed non-production issues.
+        \item Enhanced site performance by reducing search bar loading time from 2-3 seconds to 0.4 seconds, resulting in a 60\% increase in user satisfaction
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{{Incedo, Gurgaon}} \hfill \color[HTML]{371e77} Jan 2023 - June 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Software Engineer Trainee}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed APIs for the timesheet management system and Orchestrated Azure App Services for deployment on Azure.
+        \item Rectified critical bug affecting client investments for over a year, significantly Boosting client satisfaction and retention rates.
+        \item Completed comprehensive training on Agile methodologies and Achieved Azure AZ-900 certification       
+    \end{itemize}
+\end{minipage}
+\end{tabularx}\\[3pt]
+
+
+% Education
+    \section{Education}
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{{Thapar Institute of Engineering and Technology}} \hfill \color[HTML]{371e77} Aug 2019 - May 2023 \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{B.E. in Electronics and Communication and Engineering}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+    % \multicolumn{2}{@{}X@{}}{}
+    \end{tabularx}\\[3pt]
+
+% Projects
+\section{Project Work}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{\href{https://github.com/rishurana8/Shop-Mart}{ShopEase}}} \hfill \color[HTML]{371e77}  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Node Js(Express), Bootstrap, React, Mongodb}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed an e-commerce website using Express.js and MongoDB where users can Add items to a cart and Purchase them
+        \item Implemented token-based authentication and Executed user authorization during item selection and cart addition processes
+        \item Secured user data with password encryption and Formulated rigorous validations
+        \item Integrated a payment gateway with features for Sending emails and Generating downloadable invoices
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{{\href{https://github.com/rishurana8/Chat-People}{ConnectHub}}} \hfill \color[HTML]{371e77}  \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{ Html,Css,Js,Node Js (Express),Websockets}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Implemented real-time and instant communication using Socket.io
+        \item Created separate chat rooms for individuals to join and interact based on shared interests or topics
+        \item Utilized the Qs library to handle query string parameters       
+    \end{itemize}
+\end{minipage}
+\end{tabularx}\\[3pt]
+
+% Leadership and Volunteering
+\section{Achievements and Certificates}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Attained Azure AZ-900 certification
+        \item Achieved 4-Star rating on CodeChef
+        \item Awarded Winner of Enigma 2020
+        \item Achieved global rank 20 in CodeChef CookOff contest
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\end{document}

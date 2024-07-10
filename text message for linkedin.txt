@@ -1,0 +1,20 @@
+Hi Sir/Maam,
+
+I hope you're doing well. I'm reaching out to explore potential opportunities within your network or at your company. I have a diverse skill set in both backend and frontend technologies, along with strong problem-solving abilities. Here’s a brief overview of my expertise:
+
+Backend: Java, .NET
+Frontend: React, TypeScript, JavaScript
+Problem Solving: Solved over 500 DSA problems on LeetCode and hold a 3-star rating on CodeChef
+Cloud: Extensive knowledge of Azure
+DevOps: Proficient with Docker and CI/CD pipeline creation
+Version Control: Strong knowledge of Git
+Databases: Experience with SQL Server
+Core Concepts: Good knowledge of OOP principles and operating systems
+I am currently looking for new challenges where I can contribute and grow. If you know of any openings or can refer me to someone in your network, I would greatly appreciate it.
+
+Thank you for your time and assistance!
+
+Best regards,
+
+Rishu 
+
